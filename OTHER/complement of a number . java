@@ -1,0 +1,32 @@
+class Main {
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        System.out.println(sol.bitwiseComplement(5));  // 2
+        System.out.println(sol.bitwiseComplement(10)); // 5
+    }
+}
+
+class Solution {
+    public int bitwiseComplement(int n) {
+        int[] b = new int[32];
+        int i = 0;
+
+        if(n == 0){
+            return 1;
+        }
+
+        while (n > 0) {
+            b[i] = n % 2;
+            n = n / 2;
+            i++;
+        }
+
+        int dec = 0;
+        for (int j = 0; j < i; j++) {
+            int flipped = b[j] ^ 1;
+            dec = dec + flipped * (int)Math.pow(2, j);
+        }
+
+        return dec;
+    }
+}
