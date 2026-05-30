@@ -2,11 +2,12 @@ import java.util.*;
 
 class main{
     public static void main (String[] args) {
-        int[] a = {1,2,3,1,1,2};
+        int[] a = {4,3,3,4,4,2,1,2,1,1};
         Arrays.sort(a);
+        Scanner s = new Scanner(System.in);
 	
-	System.out.println("Enter the target number: ");
-	int target = s.nextInt();
+	    System.out.println("Enter the target number: ");
+	    int target = s.nextInt();
 
         int max = 1;
         int count = 1;
