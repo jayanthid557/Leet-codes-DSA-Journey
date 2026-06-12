@@ -4,18 +4,24 @@ class main{
 		int[] a = {9,-3,3,-1,6,5};
 		int n = a.length;
  		int maxl = 0;
-	
-		for(int i = 0; i<n; i++){
-			int sum = 0;
-			for(int j = i; j<n; j++){
-				sum += a[j];
-				if(sum == 0){
-					int length = j-i+1;
-					maxl = Math.max(length,maxl);
-				}
+		int sum = 0;
+		
+		HashMap<Integer, Integer> m = new HashMap<>();
+		
+		for(int i = 0; i<a.length; i++){
+			sum += a[i];
+			
+			if(sum == 0){
+				maxl = i+;
+			}
+			else if(prefixMap.containsKey(sum)){
+				maxl = Math.max(maxl, sum);
+			}
+			else{
+				prefixMap.put(sum,i);
 			}
 		}
-		
-		System.out.println(maxl);
+
+		System.out.println(maxl); 
 	}
 }
