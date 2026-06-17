@@ -1,4 +1,4 @@
-class main{
+class sum_of_three_zero{
     public static void main(String[] args){
         int[] a = {-1,0,1,1,2,3};
         int i = 0;

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class main{
+class mahority_element_count{
     public static void main (String[] args) {
         int[] a = {1,2,3,1,1,2};
         Arrays.sort(a);
