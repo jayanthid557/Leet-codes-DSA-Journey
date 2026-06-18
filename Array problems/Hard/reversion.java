@@ -71,7 +71,7 @@ public class reversion {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 3, 2, 3, 1};
+        int[] arr = {5,4,3,2,1};
 
         mergeSort(arr, 0, arr.length - 1);
 
