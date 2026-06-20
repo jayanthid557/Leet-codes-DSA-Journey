@@ -3,7 +3,7 @@ class Binarysearch{
         int[] a = {1,2,3,4,5};
         int t = 3;
         //Binary search 
-        Bin(a,t,0,a.length-1);
+        System.out.println(Bin(a,t,0,a.length-1));
     }
 
     static boolean Bin(int[] a, int t, int l, int h){
