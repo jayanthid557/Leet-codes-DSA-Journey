@@ -11,17 +11,18 @@ class UpperBoundFinder{
         int h = a.length-1;
         int ans = a.length;
 
-        while(l < h){
+         while(l <= h){
             int mid = (l+h)/2;
 
-            if(a[mid] > x){
+            if(a[mid] <= x){
                 ans = mid;
-                h = mid-1;
-            }
-            else{
                 l = mid+1;
             }
+            else{
+                h = mid-1;
+            }
         }
+
         return ans;
     }
 }
