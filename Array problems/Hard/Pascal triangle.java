@@ -12,7 +12,7 @@ class main{
                 System.out.print(val + " ");
                 val = val*(i-j)/(j+1);
             }
-            System.ut.println();
+            System.out.println();
         }
     }
 }
