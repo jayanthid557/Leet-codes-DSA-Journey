@@ -8,7 +8,6 @@ class Node {
 }
 
 public class Deletion {
-    
     static void deleteLastNode(Node head) {
         if (head == null || head.next == null) {
             return; 
