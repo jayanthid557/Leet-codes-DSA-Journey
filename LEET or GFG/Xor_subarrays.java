@@ -7,7 +7,7 @@ class Xor_subarrays{
         int[] arr = new int[n];
         for(int i = 0; i<n; i++){
             System.out.println("Enter thr number: ");
-            arr[i] = sc.nextInt();
+            arr[i] = sc.nextInt();  
         }
 
         System.out.println(solve(arr));
